@@ -14,7 +14,11 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+<<<<<<< Updated upstream
   # config.secret_key = 'cb0f81b2481eabf1076b665e1a90075692f9a1371c213d94507b1c1463f4603c96778bf92f990ce7c497aa5c8dc4c8904540a203eeeef712331f082ec5e73ab1'
+=======
+  # config.secret_key = 'badaf332dd3a5d2b67d33ec2774e6a0a94523450c1fe6b2e21e76b211f6655a0c5decaa8fc062abc170143d34f38f5adba18c862675ef5905f8e863c8496bc9c'
+>>>>>>> Stashed changes
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +130,11 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
+<<<<<<< Updated upstream
   # config.pepper = 'fbdeb0e6a83f3d6f7af91554a5cf5c076bbe1cdb3be230efe51a4bdc77ddea742a0cafeebdbcb49f89ab1d40ea52ccc409410af51975facb754d91afdcae56e9'
+=======
+  # config.pepper = 'c2a5da91b6d879d38fd003615e492947b41197687b0e49b11b80ae9939a52f792742e8654bbc0cdc554632612c5e5cac83b9cfddd52feaedfab7dcc2a48a63d9'
+>>>>>>> Stashed changes
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -244,7 +252,11 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
+<<<<<<< Updated upstream
   # config.scoped_views = false
+=======
+  config.scoped_views = true # ←複数のmodelで個別のログイン画面を使う。これをtrue
+>>>>>>> Stashed changes
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).
@@ -252,7 +264,11 @@ Devise.setup do |config|
 
   # Set this configuration to false if you want /users/sign_out to sign out
   # only the current scope. By default, Devise signs out all scopes.
+<<<<<<< Updated upstream
   # config.sign_out_all_scopes = true
+=======
+  config.sign_out_all_scopes = false #複数のモデルを扱う際、いずれかがログアウトした時に全てログアウトする。 これをfalse
+>>>>>>> Stashed changes
 
   # ==> Navigation configuration
   # Lists the formats that should be treated as navigational. Formats like
